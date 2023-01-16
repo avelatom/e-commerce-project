@@ -12,6 +12,9 @@ html {
 
 img {
     width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    padding: 20px;
 }
 
 ul {
@@ -29,8 +32,15 @@ li {
 
 .purple {
     color: #7342d6;
-
 }
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform:translateY(1px) /* click looking animation when you press the button */
+} 
 
 /* NAVIGATION BAR */
 
@@ -82,6 +92,7 @@ header {
 }
 
 .header__container {
+    padding-top: 24px;
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -89,6 +100,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__img--wrapper {
+    padding: 20px;
 }
 
 h1 {
@@ -102,4 +123,13 @@ h2 {
     font-size: 32px;
     margin-bottom: 32px;
     text-align: center;
+}
+
+.btn {
+    background-color: #7342d6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
 }
